@@ -15,18 +15,20 @@
  * limitations under the License.
  *
  */
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import {
     View,
     Text,
-    TouchableOpacity
+    TouchableOpacity,
+    ViewPropTypes
 } from 'react-native';
 
 const propTypes = {
     onPress: PropTypes.func,
     disabled: PropTypes.bool,
     style: Text.propTypes.style,
-    containerStyle: View.propTypes.style,
+    containerStyle: ViewPropTypes.style,
     text: PropTypes.string
 };
 
